@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Que horas acordar?</title>
+</head>
+
+<body>
+    <section id="resumo">
+        <h1><img src="calculadora de sono/img/header.png" alt="Qual o melhor horário pra eu acordar?"></h1>
+        <style></style>
+        <p>Tá indo dormir muito tarde e precisa de</p>
+        <p>uma ajuda pra acordar amanhã (ou hoje)? </p>
+        <p>Acorda sempre cansada?</p>
+        <p>Deixa eu te ajudar.</p>
+    </section>
+
+    <img src="calculadora de sono/img/divider.png" alt="divider" class="dividers">
+
+    <div class="container">
+        <section id="calculadora" class="column">
+            <h3>Que horas você vai dormir?</h3>
+            <div class="time-input">
+                <input type="number" id="hours" name="hours" min="0" max="23" placeholder="HH">
+                <span class="separator">:</span>
+                <input type="number" id="minutes" name="minutes" min="0" max="59" placeholder="MM">
+            </div>
+
+            <h3>Que horas você tem que acordar?</h3>
+            <div class="time-input">
+                <input type="number" id="horasacordar" name="horasacordar" min="0" max="23" placeholder="HH">
+                <span class="separator">:</span>
+                <input type="number" id="minutosacordar" name="minutosacordar" min="0" max="59" placeholder="MM">
+            </div>
+
+            <p><button onclick="calcular()">Calcular</button></p>
+
+            <!-- Div para mostrar os resultados -->
+            <div id="resultados"></div>
+        </section>
+
+        <aside class="column">
+            <h3>Por quê?</h3>
+            <p>Quando você acorda no final de um ciclo de 90 minutos, é mais provável que você esteja em um estágio leve
+                do sono, o que faz você se sentir mais descansado e menos grogue.
+            <p>Se você acordar no meio de um ciclo, pode estar em um estágio mais profundo e sentir que foi
+                interrompido, o que pode te deixar mais cansado.</p>
+            <p>Então, tentar dormir em múltiplos de 90 minutos ajuda a garantir que você acorde no momento mais leve do
+                sono e se sinta melhor.</p>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

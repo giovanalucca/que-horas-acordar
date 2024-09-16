@@ -1,0 +1,135 @@
+/* Importa fonte das headers */
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #9EB2B6;
+    background-color: rgb(17, 24, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; /* Ajustado para melhorar a legibilidade */
+}
+
+h1 {
+    font-family: 'Alice', serif;
+    color: #9EB2B6;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    line-height: 1.2; /* Ajustado para melhorar a legibilidade */
+}
+
+#resumo p {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(165, 181, 182);
+    text-align: center;
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+}
+
+/* Container flexível para o layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espaço entre as colunas */
+    justify-content: center;
+    max-width: 1200px; /* Limite máximo de largura */
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 1rem; /* Espaço interno ao redor do container */
+}
+
+.column {
+    flex: 1;
+    padding: 5rem; 
+    flex: 0 0 400px;
+    max-width: 500px;
+    min-width: 200px;
+    background-color: rgb(17, 24, 24);
+    text-align: justify;
+}
+
+/* Estilo específico para a seção calculadora */
+#calculadora {
+    background-color: rgb(17, 24, 24);
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos dos inputs */
+section input {
+    width: 5rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #363535;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+    background-color: rgb(39, 73, 73);
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: rgb(63, 78, 78);
+}
+
+/* Estilos dos inputs de tempo */
+.time-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-input input {
+    width: 6rem;
+    text-align: center;
+    align-self: center;
+    margin: 0 2px;
+}
+
+.time-input .separator {
+    margin: 0 2px;
+}
+
+/* Estilos dos resultados */
+#resultados {
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#resultados ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resultados li {
+    height: 2rem;
+    font-size: 1.2em;
+}
+
+/* Estilo dos divisores */
+.dividers {
+    margin: 1rem;
+}
